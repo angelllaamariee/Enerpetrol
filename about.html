@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enerpetrol</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+    <body>
+<!--Sub Header section -->        
+        <section class="sub-header">
+        <nav>
+            <div class="nav-links" id="navLinks">
+<!--The line below works with the menu button when the window is smaller-->        
+<!-- BUG: figure out how to properly move the navlinks-->        
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">INICIO</a></li>
+                    <li><a href="">QUIENES SOMOS</a></li>
+                    <li><a href="">SERVICIOS</a></li>
+                    <li><a href="">PROYECTOS</a></li>
+                    <li><a href="">CONTACTANOS</a></li>
+
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1> QUIENES SOMOS</h1>
+ </section> 
+
+
+<!--footer-->
+
+<section class="footer">
+    <h4> Acerca de Nosotros </h4>
+    <p>Somos una empresa constructora 100% Boliviana, con amplia experiencia en el campo de la
+        construcción e ingeniería, viendo de esta manera el nacimiento de una empresa unificada,
+        dedicada a la Industria de la construcción e ingeniería , iniciando nuestros proyectos desde
+        la selección de las mejores ubicaciones, cumpliendo con todos los estándares necesarios
+        para la correcta construcción del proyecto, contando con diseños y proyectos arquitectónicos
+        innovadores siempre a la vanguardia</p>
+
+    <h4>Información de Contacto</h4>
+    <p>Dirección:Av. PERU EDIFICIO ROZANGEL #555</p>
+    <p>Telf: 68486432-4406946-4299567 </p>
+    <p>Correo: ENERPETROL.BO@gmail.com</p>
+
+    <div class="icons"> 
+        <i class="fa-facebook"></i>
+        <i class="fa-whatsapp"></i>
+    </div>
+
+
+
+</section>
+
+
+
+
+
+
+<!---Javascript for toggle menu-->
+<!--try to fix bug for closing menu because it wont close-->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "200";
+        }
+
+    </script>
+
+
+
+    </body>
+    </html>
