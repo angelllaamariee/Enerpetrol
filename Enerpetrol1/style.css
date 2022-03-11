@@ -1,15 +1,24 @@
-*{ 
+*{
     margin: 0;
     padding: 0;
     font-family: Georgia;
 }
-.header{ 
+.header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/banner.jpg);
-    background-position: center; 
-    background-size: cover; 
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/banner2.jpg);
+    background-position: center;
+    background-size: cover;
     position: relative;
+}
+nav{
+    display:flex;
+    padding: 2%;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 /* BUG: Properly move nav links to make space for icon*/
 .nav-linksul{
@@ -24,13 +33,15 @@
     list-style-type: none;
     display: block;
     padding: 8px 12px;
-    float: left;
+    float: left; /*changed value from left to center, centers the nav links 
+    but they are stacked  */
 
 }
 .nav-links ul li a{ 
     color: white;
     text-decoration: none;
     padding: 14px 16px;
+    
     text-align: center;
     display: block;
 }
@@ -316,6 +327,7 @@ section div div img{
 	text-align: left;
 	font: bold 16px sans-serif;
 	padding: 55px 50px;
+	background-image: url(images/logo.png);
 }
 .footer-distributed .footer-left,
 .footer-distributed .footer-center,
