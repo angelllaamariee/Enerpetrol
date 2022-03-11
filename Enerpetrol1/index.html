@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
     <body>
-<!--Sub Header section -->        
-        <section class="sub-header">
+<!--Header section -->        
+        <section class="header">
         <nav>
             <div class="nav-links" id="navLinks">
 <!--The line below works with the menu button when the window is smaller-->        
@@ -26,32 +26,76 @@
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
-        </section>
-        <section class ="About us">
-        <h1> QUIENES SOMOS</h1>
-        <p>Somos una empresa constructora 100% Boliviana, con amplia experiencia en el campo de la
-            construcción e ingeniería, viendo de esta manera el nacimiento de una empresa unificada,
-            dedicada a la Industria de la construcción e ingeniería , iniciando nuestros proyectos desde
-            la selección de las mejores ubicaciones, cumpliendo con todos los estándares necesarios
-            para la correcta construcción del proyecto, contando con diseños y proyectos arquitectónicos
-            innovadores siempre a la vanguardia. Compromiso, Responsabilidad y Honestidad así como
-            pasión por la construcción e ingeniería y la satisfacción del cliente es lo que nos distingue, en
-            ENERPETROL nos comprometemos a que su proyecto concluya en el mejor tiempo y por
-            consecuente en el mejor costo posible sin sacrificar la calidad, es por eso que mejoramos cualquier
-            presupuesto en materiales y condiciones similares. Contamos con Profesionales, equipo y personal
-            de amplia experiencia en el ramo. Nuestro valor agregado es la mejor atención personalizada, el
-            mejor presupuesto y tiempo con un buen control de obra.</p>
-            
-           <h2>NUESTRA MISION</h2> 
-            <p1>Ser la mejor opción en Edificación del segmento Habitacional, Comercial, Industrial e
+<!--BUG: Figure out how to properly center Title-->
+    <div class="text-box">
+        <h1>Enerpetrol  <br> Energia & Petroleo </h1>
+        <p> Ser la mejor opción en Edificación del segmento Habitacional, Comercial, Industrial e
+Institucional, Con los mejores tiempos y costos del mercado,<br> comprometidos con la calidad e
+inmersos en un proceso de mejora continua.</p>
+<a href=""class="hero-btn">Visítanos para saber más</a>
+    </div>
+
+
+
+    </section> 
+<!--Brief Introduction-->
+
+<section class="intro">
+    <ul>
+    <li><a href="">NUESTRA MISION</a></li>
+    <p1>Ser la mejor opción en Edificación del segmento Habitacional, Comercial, Industrial e
+        Institucional, Con los mejores tiempos y costos del mercado, comprometidos con la calidad e
+        inmersos en un proceso de mejora continua.</p1>
+    <li><a href="">NUESTA VISION</a></li>
+    <p1>Ser la mejor opción en Edificación del segmento Habitacional, Comercial, Industrial e
             Institucional, Con los mejores tiempos y costos del mercado, comprometidos con la calidad e
             inmersos en un proceso de mejora continua.</p1>
-            
-            <h3>NUESTRA VISION</h3>
-            <p3>Consolidarnos como una empresa líder en servicios de construcción e ingeniería a través de la
-            confianza, innovación, y adaptación para lograr la total satisfacción de nuestros clientes.</p3>
- </section> 
+<!--I dont know what to put here-->
+<ul>
+<li><a href="">EXAMPLE</a></li>
+</ul>
+        <div class="row">
+            <div class="more-info">
+            <p1>EXAMPLE.</p1>
+            </div>
+    </ul>
+</section>
+<!--Pictures of Enerpetrol-->
+<!--BUG: pictures dont fit , might make it a slideshow-->
+<section class = "pictures">
+    <ul>
+        <li><a href="">CONOZCA A NUESTRO EQUIPO</a></li>
 
+    </ul>
+    <!-- BUG: RESIZE IMAGE TO MAKE IT LOOK PROPER -->
+    <div>
+        <div>
+            <img src ="images/picture1.jpg">
+            <img src ="images/picture2.jpg">
+            <img src ="images/picture3.jpg">
+        </div>
+    </div>
+</section>
+
+<!--Clients // NUESTROS CLIENTES-->
+<section class="clients">
+    <ul>
+        <li><a href="">NUESTRO CLIENTES</a></li>
+    </ul>
+
+    <div class = "row">
+        <div class = "clients-col">
+            <img scr ="images/part1.png">
+            <img scr ="images/part2.png">
+            <img scr ="images/part3.png">
+            <img scr ="images/part4.png">
+            <img scr ="images/part5.png">
+            
+            <h3>BUSCA LA MEJOR EMPRESA DE SERVICIOS  PETROLEROS EN BOLIVIA?</h3>
+            <a href=""class="hero-btn-2">Contact Us</a>
+        </div>
+    </div>
+</section>
 
 <!--footer-->
 
@@ -114,31 +158,6 @@
 			</div>
 
 		</footer>
-
-
-
-
-
-
-<!---Javascript for toggle menu-->
-<!--try to fix bug for closing menu because it wont close-->
-    <script>
-
-        var navLinks = document.getElementById("navLinks");
-
-        function showMenu(){
-            navLinks.style.right = "0";
-        }
-        function hideMenu(){
-            navLinks.style.right = "200";
-        }
-
-    </script>
-
-
-
-    </body>
-    </html>
 
 
 
