@@ -8,24 +8,29 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
     <body>
-<!--Header section -->        
+<!--Header section -->     
+        
         <section class="header">
+            
+
         <nav>
             <div class="nav-links" id="navLinks">
+                
 <!--The line below works with the menu button when the window is smaller-->        
 <!-- BUG: figure out how to properly move the navlinks-->        
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
-                    <li><a href="">INICIO</a></li>
-                    <li><a href="">QUIENES SOMOS</a></li>
+                    <li class="company-logo"><a href="index.html"><img src = "images/logo.png" alt></a> </li>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="about.html">QUIENES SOMOS</a></li>
                     <li><a href="">SERVICIOS</a></li>
                     <li><a href="">PROYECTOS</a></li>
-                    <li><a href="">CONTACTANOS</a></li>
-
+                    <li><a href="contact.html">CONTACTANOS</a></li>
                 </ul>
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
+
 <!--BUG: Figure out how to properly center Title-->
     <div class="text-box">
         <h1>Enerpetrol  <br> Energia & Petroleo </h1>
@@ -34,11 +39,9 @@ Institucional, Con los mejores tiempos y costos del mercado,<br> comprometidos c
 inmersos en un proceso de mejora continua.</p>
 <a href=""class="hero-btn">Visítanos para saber más</a>
     </div>
-
-
-
     </section> 
 <!--Brief Introduction-->
+
 
 <section class="intro">
     <ul>
@@ -81,18 +84,26 @@ inmersos en un proceso de mejora continua.</p>
 <section class="clients">
     <ul>
         <li><a href="">NUESTRO CLIENTES</a></li>
-    </ul>
+
 
     <div class = "row">
-        <div class = "clients">
-            <img src ="clientes/part1.png">
-            <img src ="clientes/part2.png">
-            <img src ="clientes/part3.png">
-            <img src ="clientes/part4.png">
-            <img src ="clientes/part5.png">
+            <a href="https://www.ypfbtransporte.com.bo/">
+                <img src ="clientes/part1.png" alt></a>
+            <a href="https://www.ypfblogistica.com.bo/">
+                <img src ="clientes/part2.png" alt></a>
+            <a href="https://www.ypfb-andina.com.bo/">
+                <img src ="clientes/part3.png" alt></a>
+            <a href="https://www.petrobras.com/es/paises/bolivia/">
+                <img src ="clientes/part5.png" alt></a>
+            <a href="https://www.repsol.com/es/repsol-en-el-mundo/america/bolivia/index.cshtml">
+                <img src ="clientes/part4.png" alt></a>
+            
+    </div>
+    </ul>
+    
             
             <h3>BUSCA LA MEJOR EMPRESA DE SERVICIOS  PETROLEROS EN BOLIVIA?</h3>
-            <a href=""class="hero-btn-2">Contact Us</a>
+            <a href="contact.html"class="hero-btn-2">Contact Us</a>
         </div>
     </div>
 </section>
@@ -114,7 +125,7 @@ inmersos en un proceso de mejora continua.</p>
 				
 					<a href="#">PROYECTOS</a>
 					
-					<a href="#">CONTACTANOS</a>
+					<a href="contact.html">CONTACTANOS</a>
 					
                 </p>
 
@@ -125,12 +136,13 @@ inmersos en un proceso de mejora continua.</p>
 
 				<div>
 					<i class="fa fa-map-marker"></i>
-					<p><span>Av Peru frente calle Nueva Catilla Edif. Rozangel #555 Of. 1</span> Solana Beach, California</p>
+                    <p></p><a href="https://www.google.com/maps/place/ENERPETROL/@-17.3895765,-66.1726598,17z/data=!3m1!4b1!4m5!3m4!1s0x93e3754c45269c3f:0xf1052f116f593fcd!8m2!3d-17.3895816!4d-66.1704655">Av Peru frente calle Nueva Catilla Edif. Rozangel #555 Of. 1</a></p>
 				</div>
+
 
 				<div>
 					<i class="fa fa-phone"></i>
-					<p>+4406942 - 68486432</p>
+                    <p><a href="tel:+4406942 - 68486432">+4406942 - 68486432</a></p>
 				</div>
 
 				<div>
@@ -173,7 +185,9 @@ inmersos en un proceso de mejora continua.</p>
             navLinks.style.right = "0";
         }
         function hideMenu(){
+
             navLinks.style.right = "-200px"; /*FIX?: changed 200 to -200px. Dont know how to test this*/
+ main
         }
 
     </script>
