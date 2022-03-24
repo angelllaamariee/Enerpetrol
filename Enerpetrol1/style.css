@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -15,6 +16,7 @@
   
   /* BUG: Properly move nav links to make space for icon*/
   .nav-links ul {
+
     list-style-type: none;
     margin: 10;
     padding: 0;
