@@ -321,6 +321,30 @@
     background: green;
     transition: 1s;
   }
+.social{ 
+  width: 100%;
+  clear: both;
+  margin-top: 50px;
+  text-align: center;
+  display: inline-block;
+}
+ .social i{ 
+  color: #fff;
+  font-size: 22px;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  line-height: 45px;
+  text-align: center;
+  background-color: darkgreen;
+  margin: 0px 5px;
+}
+ .social i:hover{ 
+  color: #fff;
+  background-color: #333;
+  transition: 1s ease;
+  transform: rotate(360deg);
+}
   
   /* Footer */
   .footer-distributed {
