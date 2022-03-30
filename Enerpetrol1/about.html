@@ -1,141 +1,134 @@
-<!DOCTYPE html>
-<html> 
-<head> 
-    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enerpetrol</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-    <body>
-<!--Sub Header section -->        
-        <section class="sub-header">
-        <nav>
-            <div class="nav-links" id="navLinks">
-<!--The line below works with the menu button when the window is smaller-->        
-<!-- BUG: figure out how to properly move the navlinks-->        
-                <i class="fa fa-times" onclick="hideMenu()"></i>
-                <ul>
-                    <li><a href="index.html">INICIO</a></li>
-                    <li><a href="about.html">QUIENES SOMOS</a></li>
-                    <li><a href="">SERVICIOS</a></li>
-                    <li><a href="">PROYECTOS</a></li>
-                    <li><a href="">CONTACTANOS</a></li>
+<DOCTYPE html> 
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width,inital-scale-1.0">
+            <link rel="stylesheet" href="https://pro.fontawesome.com/release/v5.10.0/css/all/css">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" type="text/css" href="aboutstyle.css">
+        </head>
+        <section class="header">
 
-                </ul>
+        <body> 
+            <nav class="nav-links">
+                <div class="logo"><a href="index.html"><img src = "images/logo01.png" alt></a></div>
+                    <a href="#" class="toggle-btn">
+                        <span class = "bar"></span>
+                        <span class = "bar"></span>
+                        <span class = "bar"></span>
+                    </a>
+                <div class="nav-menu">
+                    <ul>
+                        <li><a href="index.html">INICIO</a></li>
+                        <li><a href="about.html">QUIENES SOMOS</a></li>
+                        <li><a href="">SERVICIOS</a></li>
+                        <li><a href="">PROYECTOS</a></li>
+                        <li><a href="contact.html">CONTACTANOS</a></li>
+                    </ul>
+                </div>
+            </nav>
+    
+    <!--BUG: Figure out how to properly center Title-->
+        <div class="text-box">
+              <div class="section"> 
+                <div class="container"> 
+                    <div class="title">
+                        <h1>QUIENES SOMOS</h1>
+                    </div>
+                    <div class = "content">
+                        <div class="article">
+                            <h3>Somos una empresa constructora 100% Boliviana, con amplia experiencia en el campo de la construcción e ingeniería, viendo de esta manera el nacimiento de una empresa unificada, dedicada a la Industria de la construcción e ingeniería , iniciando nuestros proyectos desde la selección de las mejores ubicaciones, cumpliendo con todos los estándares necesarios para la correcta construcción del proyecto,contando con diseños y proyectos arquitectónicos innovadores siempre a la vanguardia.</h3>
+                            <p>Compromiso, Responsabilidad y Honestidad así como pasión por la construcción e ingeniería y la satisfacción del cliente es lo que nos distingue, en ENERPETROL nos comprometemos a que su proyecto concluya en el mejor tiempo y por consecuente en el mejor costo posible sin sacrificar la calidad, es por eso que mejoramos cualquier presupuesto en materiales y condiciones similares. Contamos con Profesionales, equipo y personal de amplia experiencia en el ramo. Nuestro valor agregado es la mejor atención personalizada, el mejor presupuesto y tiempo con un buen control de obra.</p> 
+                            <div class="button">
+                                <a href="contact.html">CONTACTANOS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-section">
+                        <img src="about.jpg">
+                    </div>
+                    <div class="social">
+                        <a href="https://www.facebook.com/ENERPETROLing"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/enerpetrol.bo/"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-whatsapp"></i></a>
+
+                    </div>
+                </div>
             </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
-        </nav>
-        <h1> QUIENES SOMOS</h1>
- </section> 
-
- <!---About Us Section: Quienes Somos-->
- <section class="about-us">
-     <div class="row">
-         <h1>CONOZCA ENERPETROL</h1>
-        <p>
-            Somos una empresa constructora 100% Boliviana, con amplia experiencia en el campo de la
-construcción e ingeniería, viendo de esta manera el nacimiento de una empresa unificada,
-dedicada a la Industria de la construcción e ingeniería , iniciando nuestros proyectos desde
-la selección de las mejores ubicaciones, cumpliendo con todos los estándares necesarios
-para la correcta construcción del proyecto, contando con diseños y proyectos arquitectónicos
-innovadores siempre a la vanguardia. Compromiso, Responsabilidad y Honestidad así como
-pasión por la construcción e ingeniería y la satisfacción del cliente es lo que nos distingue, en
-ENERPETROL nos comprometemos a que su proyecto concluya en el mejor tiempo y por
-consecuente en el mejor costo posible sin sacrificar la calidad, es por eso que mejoramos cualquier
-presupuesto en materiales y condiciones similares. Contamos con Profesionales, equipo y personal
-de amplia experiencia en el ramo. Nuestro valor agregado es la mejor atención personalizada, el
-mejor presupuesto y tiempo con un buen control de obra.
-        </p>
-     </div>
-     <div class="about-col"></div>
-     <img src="images/about.jpg">
- </section>
-
-
-
-
-<!--footer-->
-
+        </body>
+        
 <footer class="footer-distributed">
 
-			<div class="footer-left">
+    <div class="footer-left">
+
+        <h3>Company<span>logo</span></h3>
+
+        <p class="footer-links">
+            <a href="#" class="link-1">INICIO</a>
+            
+            <a href="#">QUIENES SOMOS</a>
+        
+            <a href="#">SERVICIOS</a>
+        
+            <a href="#">PROYECTOS</a>
+            
+            <a href="contact.html">CONTACTANOS</a>
+            
+        </p>
+
+        <p class="footer-company-name">Enerpetrol © 2015</p>
+    </div>
+
+    <div class="footer-center">
+
+        <div>
+            <i class="fa fa-map-marker"></i>
+            <p></p><a href="https://www.google.com/maps/place/ENERPETROL/@-17.3895765,-66.1726598,17z/data=!3m1!4b1!4m5!3m4!1s0x93e3754c45269c3f:0xf1052f116f593fcd!8m2!3d-17.3895816!4d-66.1704655">Av Peru frente calle Nueva Catilla Edif. Rozangel #555 Of. 1</a></p>
+        </div>
 
 
-				<p class="footer-links">
-					<a href="#" class="link-1">INICIO</a>
-					
-					<a href="#">QUIENES SOMOS</a>
-				
-					<a href="#">SERVICIOS</a>
-				
-					<a href="#">PROYECTOS</a>
-					
-					<a href="#">CONTACTANOS</a>
-					
-                </p>
+        <div>
+            <i class="fa fa-phone"></i>
+            <p><a href="tel:+440694268486432">+4406942 - 68486432</a></p>
+        </div>
 
-				<p class="footer-company-name">Enerpetrol © 2015</p>
-			</div>
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:ENERPETROL.BO@gmail.com">ENERPETROL.BO@gmail.com</a></p>
+        </div>
 
-			<div class="footer-center">
+    </div>
 
-				<div>
-					<i class="fa fa-map-marker"></i>
-					<p><span>Av Peru frente calle Nueva Catilla Edif. Rozangel #555 Of. 1</span> Solana Beach, California</p>
-				</div>
+    <div class="footer-right">
 
-				<div>
-					<i class="fa fa-phone"></i>
-					<p>+4406942 - 68486432</p>
-				</div>
+        <p class="footer-company-about">
+            <span>NUESTRA VISION </span>
+           Consolidarnos como una empresa líder en servicios de construcción e ingeniería a través de la confianza, innovación, y adaptación para lograr la total satisfacción de nuestros clientes.
+        </p>
 
-				<div>
-					<i class="fa fa-envelope"></i>
-					<p><a href="mailto:ENERPETROL.BO@gmail.com">ENERPETROL.BO@gmail.com</a></p>
-				</div>
+        <div class="footer-icons">
 
-			</div>
-
-			<div class="footer-right">
-
-                <p class="footer-company-about">
-					<span>NUESTRA VISION </span>
-                    Consolidarnos como una empresa líder en servicios de construcción e ingeniería a través de la confianza, innovación, y adaptación para lograr la total satisfacción de nuestros clientes.
-				</p>
-
-				<div class="footer-icons">
-
-					<a href="#"><i class="fa fa-facebook"></i></a>
-					<a href="#"><i class="fa fa-whatsapp"></i></a>
-
-				</div>
-
-			</div>
-
-		</footer>
+            <a href="https://www.facebook.com/ENERPETROLing"><i class="fa fa-facebook"></i></a>
+            <a href="https://wa.me/<440694268486432>"><i class="fa fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/enerpetrol.bo/"><i class="fa fa-instagram"></i></a>
 
 
+        </div>
 
+    </div>
 
-
-
+</footer>
 <!---Javascript for toggle menu-->
-<!--try to fix bug for closing menu because it wont close-->
-    <script>
-
-        var navLinks = document.getElementById("navLinks");
-
-        function showMenu(){
-            navLinks.style.right = "0";
-        }
-        function hideMenu(){
-            navLinks.style.right = "200";
-        }
-
-    </script>
+<script>
+    const togglebtn = document.getElementsByClassName("toggle-btn")[0]
+    const navmenu = document.getElementsByClassName("nav-menu")[0]
+    togglebtn.addEventListener("click",() => {
+        navmenu.classList.toggle("active")
+    })
+</script>
 
 
 
-    </body>
-    </html>
+</body>
+</html>

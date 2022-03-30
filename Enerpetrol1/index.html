@@ -13,14 +13,15 @@
         <section class="header">
             
 
-        <nav>
-            <div class="nav-links" id="navLinks">
-                
-<!--The line below works with the menu button when the window is smaller-->        
-<!-- BUG: figure out how to properly move the navlinks-->        
-                <i class="fa fa-times" onclick="hideMenu()"></i>
+        <nav class="nav-links">
+            <div class="logo"><a href="index.html"><img src = "images/logo01.png" alt></a></div>
+                <a href="#" class="toggle-btn">
+                    <span class = "bar"></span>
+                    <span class = "bar"></span>
+                    <span class = "bar"></span>
+                </a>
+            <div class="nav-menu">
                 <ul>
-                    <li class="company-logo"><a href="index.html"><img src = "images/logo.png" alt></a> </li>
                     <li><a href="index.html">INICIO</a></li>
                     <li><a href="about.html">QUIENES SOMOS</a></li>
                     <li><a href="">SERVICIOS</a></li>
@@ -28,7 +29,6 @@
                     <li><a href="contact.html">CONTACTANOS</a></li>
                 </ul>
             </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
 
 <!--BUG: Figure out how to properly center Title-->
@@ -102,8 +102,12 @@ inmersos en un proceso de mejora continua.</p>
     </ul>
     
             
-            <h3>BUSCA LA MEJOR EMPRESA DE SERVICIOS  PETROLEROS EN BOLIVIA?</h3>
-            <a href="contact.html"class="hero-btn-2">Contact Us</a>
+           <div class="social">
+        <a href="https://www.facebook.com/ENERPETROLing"><i class="fa fa-facebook"></i></a>
+        <a href="https://wa.me/<440694268486432>"><i class="fa fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/enerpetrol.bo/"><i class="fa fa-instagram"></i></a>
+
+    </div>
         </div>
     </div>
 </section>
@@ -161,8 +165,9 @@ inmersos en un proceso de mejora continua.</p>
 
 				<div class="footer-icons">
 
-					<a href="#"><i class="fa fa-facebook"></i></a>
-					<a href="#"><i class="fa fa-whatsapp"></i></a>
+					<a href="https://www.facebook.com/ENERPETROLing"><i class="fa fa-facebook"></i></a>
+                   			<a href="https://wa.me/<440694268486432>"><i class="fa fa-whatsapp"></i></a>
+                 		        <a href="https://www.instagram.com/enerpetrol.bo/"><i class="fa fa-instagram"></i></a>
 
 				</div>
 
@@ -176,23 +181,16 @@ inmersos en un proceso de mejora continua.</p>
 
 
 <!---Javascript for toggle menu-->
-<!--try to fix bug for closing menu because it wont close-->
     <script>
-
-        var navLinks = document.getElementById("navLinks");
-
-        function showMenu(){
-            navLinks.style.right = "0";
-        }
-        function hideMenu(){
-
-            navLinks.style.right = "-200px"; /*FIX?: changed 200 to -200px. Dont know how to test this*/
- main
-        }
-
+        const togglebtn = document.getElementsByClassName("toggle-btn")[0]
+        const navmenu = document.getElementsByClassName("nav-menu")[0]
+        togglebtn.addEventListener("click",() => {
+            navmenu.classList.toggle("active")
+        })
     </script>
 
 
 
     </body>
     </html>
+
