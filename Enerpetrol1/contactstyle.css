@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body 
+{
+  background: hsla(0, 0%, 100%, 0);
+}
+
+.nav-links{
+  width: 100%;
+  color: #fff;
+  background-color: #484848;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+}
+.nav-menu ul{
+  display: flex;
+  padding-right: 30px;
+}
+.nav-menu ul li{
+  list-style: none;
+  padding: 15px 15px;
+}
+.nav-menu ul li a{
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.nav-menu ul li::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  background: green;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-menu ul li:hover::after {
+  width: 100%;
+}
+.toggle-btn{
+  position: absolute;
+  top: 50px;
+  right: 30px;
+  display: none;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 22px;
+  width: 32px;
+}
+.toggle-btn .bar{
+  height: 17%;
+  width: 100%;
+  background-color: green;
+  border-radius: 10px;
+}
+@media screen and (max-width: 768px) {
+  .toggle-btn{
+    display: flex;
+  }
+  .nav-menu {
+    position: absolute;
+    background: #fff;
+    height: 300xp;
+    width: 200px;
+    top: 127px;
+    left: 0;
+    text-align:center;
+    z-index: 2;
+    transition: 2s;
+    display: none;
+  }
+  
+  .nav-links {
+    color: white;
+    font-size: 22px;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+
+  }
+  .nav-menu ul {
+    padding-right: 0px;
+    width: 100%;
+    flex-direction: column;
+  }
+  .nav-menu ul li{
+    padding-left: 30px;
+  }
+  .nav-menu ul li a{
+    font-size: 17px;
+    color: black;
+  }
+  .nav-menu.active{
+    display: flex;
+    
+  }
+}
+
+
+.contactus
+{
+  position: relative;
+  width: 100%;
+  padding: 40px 100px;
+}
+.contactus .title 
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+}
+.contactus .title h2 
+{
+  color: rgb(29, 87, 58);
+  font-weight: 500;
+}
+.form
+{
+  grid-area: form;
+}
+.info
+{
+  grid-area: info;
+}
+.map
+{
+  grid-area: map;
+}
+.box
+{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 5fr 4fr ;
+  grid-template-areas:
+        "form info"
+        "form map";
+  margin-top: 20px;
+}
+
+.contact 
+{
+  background: rgb(51, 124, 65);
+  padding: 40px;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0);
+}
+.contact h3 
+{
+  color: #fdfdfd;
+  font-weight: 500;
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+/* FormBx */
+.formBx 
+{
+  position: relative;
+  width: 100%;
+}
+.formBx .row50 
+{
+  display: flex;
+  gap: 20px;
+}
+.inputBox 
+{
+  
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  width: 50%;
+}
+.formBx .row100 .inputBox 
+{
+  width: 100%;
+}
+.formBx .inputBox span 
+{
+  color: #fdfdfd;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+.formBx .inputBox input 
+{
+  padding: 10px;
+  font-size: 1.1em;
+  outline: none;
+  border: 1px solid #333;
+}
+.formBx .inputBox textarea 
+{
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  resize: none;
+  min-height: 220px;
+  outline: none;
+  border: 1px solid #333;
+}
+.formBx .inputBox input[type="submit"]
+{
+  background: #184d18;
+  color: #fff;
+  font-size: 1.1em;
+  max-width: 120px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 15px;
+}
+.formBx ::placeholder
+{
+  color: #999;
+}
+/* info Box */
+.info 
+{
+  background: #000000;
+}
+.info h3 
+{
+  color: #fff;
+}
+.infoBox div
+{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.infoBox div span 
+{
+  min-width: 40px;
+  height: 40px;
+  margin-right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #18b7ff;
+  color: #fff;
+  font-size: 1.5em;
+  border-radius: 50%;
+}
+.infoBox div p,
+.infoBox div a
+{
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.1em;
+}
+.sci 
+{
+  margin-top: 40px;
+  display: flex;
+}
+.sci li 
+{
+  list-style: none;
+  margin-right: 15px;
+}
+.sci li a 
+{
+  font-size: 2em;
+  display: flex;
+  color: #ccc;
+}
+.sci li a:hover 
+{
+  color: #fff;
+}
+
+
+
+.map
+{
+  padding: 0;
+}
+.map iframe 
+{
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+@media (max-width:991px)
+{
+  body
+  {
+    background: #03a9f5
+  }
+  .contactus
+  {
+    padding: 20px;
+  }
+  .box
+  {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+          "form"
+          "info"
+          "map";
+  }
+  .formBx .row50
+  {
+    flex-direction: column;
+    gap: 0;
+  }
+  .inputBox 
+  {
+    width: 100%;
+  }
+  .map
+  {
+    height: 300px;
+  }
+}
