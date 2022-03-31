@@ -1,112 +1,176 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-  	<title>Contact Form</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="contactstyle.css">
-	</head>
-	<body>
-	<section class="ftco-section">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-md-6 text-center mb-5">
-					<h2 class="heading-section">Contact Form</h2>
-				</div>
-			</div>
-			<div class="row justify-content-center">
-				<div class="col-md-12">
-					<div class="wrapper">
-						<div class="row mb-5">
-							<div class="col-md-3">
-								<div class="dbox w-100 text-center">
-			        	
-			        		<div class="text">
-				            <p><span>Address:</span>address</p>
-				          </div>
-			          </div>
-							</div>
-							<div class="col-md-3">
-								<div class="dbox w-100 text-center">
-			        		
-			        		<div class="text">
-				            <p><span>Phone:</span> <a href="tel://1234567920">###—###-####</a></p>
-				          </div>
-			          </div>
-							</div>
-							<div class="col-md-3">
-								<div class="dbox w-100 text-center">
-			        		
-			        		<div class="text">
-				            <p><span>Email:</span> <a href="mailto:info@yoursite.com">company.com</a></p>
-				          </div>
-			          </div>
-							</div>
-							<div class="col-md-3">
-								<div class="dbox w-100 text-center">
-			        		
-			        		<div class="text">
-				            <p><span>Website</span> <a href="#">Homepage of Company</a></p>
-				          </div>
-			          </div>
-							</div>
-						</div>
-						<div class="row no-gutters">
-							<div class="col-md-7">
-								<div class="contact-wrap w-100 p-md-5 p-4">
-									<h3 class="mb-4">Contact Us</h3>
-									<div id="form-message-warning" class="mb-4"></div> 
-				      		<div id="form-message-success" class="mb-4">
-				            Your message was sent, thank you!
-				      		</div>
-									<form method="POST" id="contactForm" name="contactForm" class="contactForm">
-										<div class="row">
-											<div class="col-md-6">
-												<div class="form-group">
-													<label class="label" for="name">Full Name</label>
-													<input type="text" class="form-control" name="name" id="name" placeholder="Name">
-												</div>
-											</div>
-											<div class="col-md-6"> 
-												<div class="form-group">
-													<label class="label" for="email">Email Address</label>
-													<input type="email" class="form-control" name="email" id="email" placeholder="Email">
-												</div>
-											</div>
-											<div class="col-md-12">
-												<div class="form-group">
-													<label class="label" for="subject">Subject</label>
-													<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
-												</div>
-											</div>
-											<div class="col-md-12">
-												<div class="form-group">
-													<label class="label" for="#">Message</label>
-													<textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Message"></textarea>
-												</div>
-											</div>
-											<div class="col-md-12">
-												<div class="form-group">
-													<input type="submit" value="Send Message" class="btn btn-primary">
-													<div class="submitting"></div>
-												</div>
-											</div>
-										</div>
-									</form>
-								</div>
-							</div>
-							<div class="col-md-5 d-flex align-items-stretch">
-								<div class="info-wrap w-100 p-5 img" style="background-image: url(images/img.jpg);">
-			          </div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Contact Us Page</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/release/v5.10.0/css/all/css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="contactstyle.css">
+</head>
+<body>
+  <nav class="nav-links">
+		<div class="logo"><a href="index.html"><img src = "images/logo01.png" alt></a></div>
+			<a href="#" class="toggle-btn">
+				<span class = "bar"></span>
+				<span class = "bar"></span>
+				<span class = "bar"></span>
+			</a>
+		<div class="nav-menu">
+			<ul>
+				<li><a href="index.html">INICIO</a></li>
+				<li><a href="about.html">QUIENES SOMOS</a></li>
+				<li><a href="">SERVICIOS</a></li>
+				<li><a href="">PROYECTOS</a></li>
+				<li><a href="contact.html">CONTACTANOS</a></li>
+			</ul>
 		</div>
-	</section>
-
-
-	</body>
+   </nav>
+  <div class="contactus">
+    <div class="title">
+      <h2>Contact Us</h2>
+    </div>
+    <div class="box">
+      <div class="contact form">
+        <h3>Send a Message</h3>
+        <form>
+          <div class="formBx">
+            <div class="row50">
+              <div class="inputBox">
+                <span>First Name</span>
+                <input type="text" placeholder="">
+              </div>
+              <div class="inputBox">
+                <span>Last Name</span>
+                <input type="text" placeholder="">
+              </div>
+            </div>
+            <div class="row50">
+              <div class="inputBox">
+                <span>Email</span>
+                <input type="text"  placeholder="">
+              </div>
+              <div class="inputBox">
+                <span>Mobile</span>
+                <input type="text"  placeholder="">
+              </div>
+            </div>
+            <div class="row100">
+              <div class="inputBox">
+                <span>Message</span>
+                <textarea placeholder="Write your message.."></textarea>
+              </div>
+            </div>
+            <div class="row100">
+              <div class="inputBox">
+                <input type="submit" value="Send">
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="contact info">
+        <h3>Contact Info</h3>
+        <div class="infoBox">
+          <div>
+            <span><ion-icon name="location"></ion-icon></span>
+            <p>Av. Perú, Cochabamba<br>Bolivia</p>
+          </div>
+          <div>
+            <span><ion-icon name="mail"></ion-icon></span>
+            <a href="ENERPETROL.BO@gmail.com">ENERPETROL.BO@gmail.com</a>
+          </div>
+          <div>
+            <span><ion-icon name="call"></ion-icon></span>
+            <a href="tel:+4406942-68486432">+4406942-68486432</a>
+          </div>
+          <ul class="sci">
+            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="contact map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.462433176558!2d-66.17265438512358!3d-17.389581588077306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93e3754c45269c3f%3A0xf1052f116f593fcd!2sENERPETROL!5e0!3m2!1sen!2sus!4v1648707038316!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
 </html>
+<footer class="footer-distributed">
 
+    <div class="footer-left">
+
+        <p class="footer-links">
+            <a href="#" class="link-1">INICIO</a>
+            
+            <a href="#">QUIENES SOMOS</a>
+        
+            <a href="#">SERVICIOS</a>
+        
+            <a href="#">PROYECTOS</a>
+            
+            <a href="contact.html">CONTACTANOS</a>
+            
+        </p>
+
+        <p class="footer-company-name">Enerpetrol © 2015</p>
+    </div>
+
+    <div class="footer-center">
+
+        <div>
+            <i class="fa fa-map-marker"></i>
+            <p></p><a href="https://www.google.com/maps/place/ENERPETROL/@-17.3895765,-66.1726598,17z/data=!3m1!4b1!4m5!3m4!1s0x93e3754c45269c3f:0xf1052f116f593fcd!8m2!3d-17.3895816!4d-66.1704655">Av Peru frente calle Nueva Catilla Edif. Rozangel #555 Of. 1</a></p>
+        </div>
+
+
+        <div>
+            <i class="fa fa-phone"></i>
+            <p><a href="tel:+440694268486432">+4406942 - 68486432</a></p>
+        </div>
+
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:ENERPETROL.BO@gmail.com">ENERPETROL.BO@gmail.com</a></p>
+        </div>
+
+    </div>
+
+    <div class="footer-right">
+
+        <p class="footer-company-about">
+            <span>NUESTRA VISION </span>
+           Consolidarnos como una empresa líder en servicios de construcción e ingeniería a través de la confianza, innovación, y adaptación para lograr la total satisfacción de nuestros clientes.
+        </p>
+
+        <div class="footer-icons">
+
+            <a href="https://www.facebook.com/ENERPETROLing"><i class="fa fa-facebook"></i></a>
+            <a href="https://wa.me/<440694268486432>"><i class="fa fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/enerpetrol.bo/"><i class="fa fa-instagram"></i></a>
+
+
+        </div>
+
+    </div>
+
+</footer>
+<!---Javascript for toggle menu-->
+<script>
+    const togglebtn = document.getElementsByClassName("toggle-btn")[0]
+    const navmenu = document.getElementsByClassName("nav-menu")[0]
+    togglebtn.addEventListener("click",() => {
+        navmenu.classList.toggle("active")
+    })
+</script>
+
+
+
+</body>
+</html>
