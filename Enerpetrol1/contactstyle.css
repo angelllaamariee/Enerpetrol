@@ -5,7 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Georgia';
 }
 
 body 
@@ -16,7 +16,7 @@ body
 .nav-links{
   width: 100%;
   color: #fff;
-  background-color: #484848;
+  background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;  
@@ -32,7 +32,7 @@ body
 .nav-menu ul li a{
   text-decoration: none;
   font-size: 18px;
-  color: #fff;
+  color: black;
   text-transform: uppercase;
 }
 .nav-menu ul li::after {
