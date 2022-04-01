@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -37,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
 ]
 
 MIDDLEWARE = [
@@ -54,7 +56,7 @@ ROOT_URLCONF = 'mysite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -115,7 +117,20 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/mysite/'
+
+MEDIA_URL = '/images/'
+
+STATICFILES_DIRS =[os.path.join(BASE_DIR, 'static'),]
+
+EMAIL_BACKEND='django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST='smtp.sendgrid.com'
+EMAIL_PORT=587
+EMAIL_USE_TLS=True
+EMAIL_HOST_USER = 'apikey'
+EMAIL_HOST_PASSWORD='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'
+
+SENDGRID_API_KEY = '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'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field

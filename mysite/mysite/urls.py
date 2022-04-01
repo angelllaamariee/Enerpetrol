@@ -15,7 +15,17 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from . import views
+from django.core.mail import send_mail
+from .views import contactView, successView
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('index/', views.index),
+    path('about/',views.about),
+    path('contact/', contactView, name='contact'),
+    path('success/', successView, name='success'),
+    
 ]
+
