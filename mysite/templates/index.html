@@ -1,0 +1,186 @@
+{% load static %}
+<!DOCTYPE html>
+<html> 
+<head> 
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enerpetrol</title>
+    <link rel="stylesheet"  type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+    <body>
+<!--Header section -->        
+        <section class="header">
+            <nav class="nav-links">
+                <div class="logo"><a href="index.html"><img src = "images/logo01.png" alt></a></div>
+                    <a href="#" class="toggle-btn">
+                        <span class = "bar"></span>
+                        <span class = "bar"></span>
+                        <span class = "bar"></span>
+                    </a>
+                <div class="nav-menu">
+                    <ul>
+                        <li><a href="index.html">INICIO</a></li>
+                        <li><a href="about.html">QUIENES SOMOS</a></li>
+                        <li><a href="">SERVICIOS</a></li>
+                        <li><a href="">PROYECTOS</a></li>
+                        <li><a href="contact.html">CONTACTANOS</a></li>
+                    </ul>
+                </div>
+            </nav>
+<!--BUG: Figure out how to properly center Title-->
+    <div class="text-box">
+        <h1>Enerpetrol  <br> Energia & Petroleo </h1>
+        <p> Ser la mejor opción en Edificación del segmento Habitacional, Comercial, Industrial e
+Institucional, Con los mejores tiempos y costos del mercado,<br> comprometidos con la calidad e
+inmersos en un proceso de mejora continua.</p>
+<a href=""class="hero-btn">Visítanos para saber más</a>
+    </div>
+
+
+
+    </section> 
+<!--Brief Introduction-->
+
+<section class="intro">
+    <ul>
+    <li><a href="">NUESTRA MISION</a></li>
+    <p1>Ser la mejor opción en Edificación del segmento Habitacional, Comercial, Industrial e
+        Institucional, Con los mejores tiempos y costos del mercado, comprometidos con la calidad e
+        inmersos en un proceso de mejora continua.</p1>
+    <li><a href="">NUESTA VISION</a></li>
+    <p1>Ser la mejor opción en Edificación del segmento Habitacional, Comercial, Industrial e
+            Institucional, Con los mejores tiempos y costos del mercado, comprometidos con la calidad e
+            inmersos en un proceso de mejora continua.</p1>
+<!--I dont know what to put here-->
+<ul>
+<li><a href="">EXAMPLE</a></li>
+</ul>
+        <div class="row">
+            <div class="more-info">
+            <p1>EXAMPLE.</p1>
+            </div>
+    </ul>
+</section>
+<!--Pictures of Enerpetrol-->
+<!--BUG: pictures dont fit , might make it a slideshow-->
+<section class = "pictures">
+    <ul>
+        <li><a href="">CONOZCA A NUESTRO EQUIPO</a></li>
+
+    </ul>
+    <!-- BUG: RESIZE IMAGE TO MAKE IT LOOK PROPER -->
+    <div>
+        <div>
+            <img src ="{% static 'images/picture1.jpg' %}">
+            <img src ="{% static 'images/picture2.jpg' %}">
+            <img src ="{% static 'images/picture3.jpg' %}">
+        </div>
+    </div>
+</section>
+
+<!--Clients // NUESTROS CLIENTES-->
+<section class="clients">
+    <ul>
+        <li><a href="">NUESTRO CLIENTES</a></li>
+    </ul>
+
+    <div class = "row">
+        <div class = "clients">
+            <img src ="{% static 'images/part1.png' %}">
+            <img src ="{% static 'images/part2.png' %}">
+            <img src ="{% static 'images/part3.png' %}">
+            <img src ="{% static 'images/part4.png' %}">
+            <img src ="{% static 'images/part5.png' %}">
+            
+            <h3>BUSCA LA MEJOR EMPRESA DE SERVICIOS  PETROLEROS EN BOLIVIA?</h3>
+            <a href=""class="hero-btn-2">Contact Us</a>
+        </div>
+    </div>
+</section>
+
+<!--footer-->
+
+<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+				<h3>Company<span>logo</span></h3>
+
+				<p class="footer-links">
+					<a href="#" class="link-1">INICIO</a>
+					
+					<a href="#">QUIENES SOMOS</a>
+				
+					<a href="#">SERVICIOS</a>
+				
+					<a href="#">PROYECTOS</a>
+					
+					<a href="#">CONTACTANOS</a>
+					
+                </p>
+
+				<p class="footer-company-name">Enerpetrol © 2015</p>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><span>Av Peru frente calle Nueva Catilla Edif. Rozangel #555 Of. 1</span> Solana Beach, California</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+4406942 - 68486432</p>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:ENERPETROL.BO@gmail.com">ENERPETROL.BO@gmail.com</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+                <p class="footer-company-about">
+					<span>NUESTRA VISION </span>
+                   Consolidarnos como una empresa líder en servicios de construcción e ingeniería a través de la confianza, innovación, y adaptación para lograr la total satisfacción de nuestros clientes.
+				</p>
+
+				<div class="footer-icons">
+
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-whatsapp"></i></a>
+
+				</div>
+
+			</div>
+
+		</footer>
+
+
+
+
+
+
+<!---Javascript for toggle menu-->
+<!--try to fix bug for closing menu because it wont close-->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "200";
+        }
+
+    </script>
+
+
+
+    </body>
+    </html>
