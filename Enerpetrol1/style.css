@@ -1,4 +1,5 @@
 
+
 * {
   margin: 0;
   padding: 0;
@@ -13,11 +14,14 @@
   background-size: cover;
   position: relative;
 }
+.logo {
+  padding-left: 4%;
+}
 
 .nav-links{
   width: 100%;
   color: #fff;
-  background-color:white;
+  background-color:gray;
   display: flex;
   justify-content: space-between;
   align-items: center;  
@@ -271,12 +275,16 @@
 content: "";
 width: 30%;
 height: 2px;
+padding: auto;
 display: block;
 background: block;
 background-color: #01012e;
-border-radius: 50%;
+border-radius: 60%;
 margin: 1%;
 margin-left: 35%;
+}
+.clients .mb-4{
+  padding-top: 4%;
 }
 .clients p{
 font-size: 18px;
@@ -367,7 +375,7 @@ color: #01012e;
 
 /* Footer */
 .footer-distributed {
-  background: rgb(22, 22, 22);
+  background: gray;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   width: 100%;
