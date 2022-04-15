@@ -14,7 +14,8 @@
     background-color:white;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;  
+    align-items: center;
+    padding-top: 20px;
   }
   .nav-menu ul{
     display: flex;
@@ -121,17 +122,18 @@
     margin-top: 0px;
     font-size: 20px;
 }
-.text-box h5{
+.text-box h1{
     color: green;
 }
 
 .paragraph{
-    margin: 20px;
+    margin: 0px;
     font-size: 20px;
     font-weight: 300;
+    padding-top: 20px;
 }
 .paragraph ul li{
-padding: .30cm;
+padding-top: .30cm;
 }
 /*Images*/
 .gallery-box{
