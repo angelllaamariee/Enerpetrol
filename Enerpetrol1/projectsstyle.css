@@ -13,6 +13,11 @@
 .logo {
   padding-left: 2%;
 }
+.image-logo {
+  width: 170px;
+  height: 100%;
+  
+}
 
 .nav-links{
   width: 100%;
@@ -24,7 +29,7 @@
 .nav-links .hero-btn {
   display: inline-block;
   text-decoration: none;
-  color: black;
+  color: white;
   border: 2px solid darkgreen;
 
 }
@@ -33,9 +38,9 @@
   text-decoration: none;
   color: black;
   border: 2px solid darkgreen;
-  height: 20px;
-  padding: 10px 35px;
-  font-size: 18px;
+  height: 25px;
+  padding: 15px 75px;
+  font-size: 23px;
   background: transparent;
   position: relative;
   cursor: pointer;
@@ -56,7 +61,7 @@
 .nav-menu ul li a{
   text-decoration: none;
   font-size: 18px;
-  color: black;
+  color: white;
   text-transform: uppercase;
 }
 
@@ -102,7 +107,6 @@
     width: 100%;
     flex-direction: column;
     align-items: flex-start;
-
   }
   .nav-menu ul {
     padding-right: 0px;
@@ -122,6 +126,7 @@
   }
 }
   
+  /*---BUG:Find out why header isnt fully centered---*/
   .text-box {
     width: 100%;
     color: azure;
@@ -154,6 +159,7 @@
     border: 1px solid green;
     background: green;
     transition: 1s;
+    color: white;
   }
   .pictures {
     text-align: center;
@@ -198,14 +204,14 @@
     font-weight: 600;
   }
  
- /* Footer */
+  /* Footer */
 .footer-distributed {
   background: black;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing:border-box;
   width: 100%;
   text-align: left;
-  font: bold 16px sans-serif;
+  font: bold 20px sans-serif;
   padding: 5px 10px;
 }
 .footer-distributed .footer-left,
