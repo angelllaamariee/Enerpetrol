@@ -87,16 +87,16 @@
   background-color: green;
   border-radius: 10px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .toggle-btn{
     display: flex;
   }
   .nav-menu {
     position: absolute;
     background: #fff;
-    height: 300xp;
-    width: 290px;
-    top: 127px;
+    height: 700px;
+    width: 400px;
+    top: 170px;
     left: 0;
     text-align:center;
     z-index: 2;
