@@ -14,6 +14,11 @@
 .logo {
   padding-left: 2%;
 }
+.image-logo {
+  width: 170px;
+  height: 100%;
+  
+}
 
 .nav-links{
   width: 100%;
@@ -34,9 +39,9 @@
   text-decoration: none;
   color: black;
   border: 2px solid darkgreen;
-  height: 21px;
-  padding: 10px 35px;
-  font-size: 18px;
+  height: 25px;
+  padding: 15px 75px;
+  font-size: 23px;
   background: transparent;
   position: relative;
   cursor: pointer;
@@ -45,6 +50,8 @@
   border: 1px solid green;
   background: green;
   transition: 1s;
+  color: white;
+
 }
 .nav-menu ul{
   display: flex;
@@ -178,7 +185,7 @@
 }
 .container .title h1{ 
     text-transform: uppercase;
-    font-size: 35px;
+    font-size: 40px;
     color: #333;
 }
 .container .title h1::after{ 
@@ -204,11 +211,11 @@
 }
 .content .article h3{ 
     color: #a3a3a3;
-    font-size: 17px;
+    font-size: 50px;
 }
 .content .article p{ 
     color: #a3a3a3;
-    font-size: 20px;
+    font-size: 30px;
     line-height: 1.5;
     color: #333;
 }
@@ -221,7 +228,7 @@
     background-color: darkgreen;
     border-radius: 40px;
     color: #fff;
-    font-size: 18px;
+    font-size: 25px;
     letter-spacing: 1.5px;
 }
 .content .article .button a:hover{
@@ -238,11 +245,11 @@
 }
 .container .social i{ 
     color: #fff;
-    font-size: 22px;
-    height: 45px;
-    width: 45px;
+    font-size: 40px;
+    height:60px;
+    width: 60px;
     border-radius: 50%;
-    line-height: 45px;
+    line-height: 60px;
     text-align: center;
     background-color: darkgreen;
     margin: 0px 5px;
@@ -301,7 +308,7 @@
   box-sizing:border-box;
   width: 100%;
   text-align: left;
-  font: bold 16px sans-serif;
+  font: bold 20px sans-serif;
   padding: 5px 10px;
 }
 .footer-distributed .footer-left,
@@ -329,7 +336,7 @@
 }
 .footer-distributed .footer-company-name {
   color: white;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: normal;
   margin: 0;
 }
@@ -374,7 +381,7 @@
 .footer-distributed .footer-links a:before {
   content: "|";
   font-weight: 300;
-  font-size: 20px;
+  font-size: 30px;
   left: 0;
   color: darkgreen;
   display: inline-block;
@@ -403,8 +410,8 @@
   margin-bottom: 20px;
 }
 .footer-distributed .footer-icons {
-  margin-top: 70px ;
-  margin-left: 70px;
+  margin-top: 80px ;
+  margin-left: 90px;
 }
 .footer-distributed .footer-icons a {
   display: inline-block;
@@ -413,12 +420,12 @@
   cursor: pointer;
   background-color: darkgreen;
   border-radius: 2px;
-  font-size: 35px;
+  font-size: 30px;
   color: #ffffff;
   text-align: center;
   line-height: 55px;
 
-  margin-right: 5px;
+  margin-right: 10px;
   margin-bottom: 10px;
 }
 /* Allows for the footer to be reponsive */
