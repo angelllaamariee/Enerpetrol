@@ -13,6 +13,22 @@ body
   background: hsla(0, 0%, 100%, 0);
 }
 
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.logo {
+  padding-left: 2%;
+}
+.image-logo {
+  width: 170px;
+  height: 100%;
+  
+}
+
 .nav-links{
   width: 100%;
   background:-webkit-linear-gradient(white,white,white,gray);;
@@ -32,9 +48,9 @@ body
   text-decoration: none;
   color: black;
   border: 2px solid darkgreen;
-  height: 44px;
-  padding: 10px 35px;
-  font-size: 18px;
+  height: 60px;
+  padding: 15px 75px;
+  font-size: 23px;
   background: transparent;
   position: relative;
   cursor: pointer;
@@ -43,6 +59,7 @@ body
   border: 1px solid green;
   background: green;
   transition: 1s;
+  color: white;
 }
 .nav-menu ul{
   display: flex;
@@ -304,7 +321,7 @@ body
   box-sizing:border-box;
   width: 100%;
   text-align: left;
-  font: bold 16px sans-serif;
+  font: bold 20px sans-serif;
   padding: 5px 10px;
 }
 .footer-distributed .footer-left,
