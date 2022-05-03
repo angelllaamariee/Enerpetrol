@@ -74,15 +74,16 @@
   background-color: green;
   border-radius: 10px;
 }
-@media screen and (max-width: 800px) {
+/* /*For the nav bar when window is smaller*/
+@media screen and (max-width:800px) {
   .toggle-btn{
     display: flex;
   }
   .nav-menu {
     position: absolute;
-    background: #fff;
-    height: 700px;
-    width: 400px;
+    background: white;
+    height: 500px;
+    width: 500px;
     top: 170px;
     left: 0;
     text-align:center;
