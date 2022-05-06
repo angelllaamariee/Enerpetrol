@@ -253,7 +253,7 @@
     font-style: oblique;
     font-weight: 400;
 	color: white;
-	
+	 background:linear-gradient(45deg, darkgreen, #000000); 
 }
 html, body {
     height: 100%;
